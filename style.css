@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.911);
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.up-arrow{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: black;
+    color: orange;
+    border-color: orange;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 100px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.up-arrow.show {
+    visibility: visible;
+    opacity: 1;
+  }
+.up-arrow.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+.up-arrow:hover{
+    filter: brightness(80%);
+    border-color: darkorange;
+    border-style:groove;
+}
+/* navigation section----------------------------------------------- */
+.header{
+    background-color: rgb(13, 15, 15);
+    position: fixed;
+    width: 100%;
+    /* left: 100px; */
+    z-index: 999;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    height: 80px;
+}
+.header.sticky{
+    padding: 15px 0;
+    background-color: black;
+}
+.header .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 27px;
+    padding: 3px;
+    font-weight: bolder;
+    display: inline;
+}
+#portfo a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+#lio{
+    color: orange;
+    transition: all 0.3s ease;
+}
+.header.sticky .logo #lio{
+    background-color: black;
+    color: orange;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.header ul li{
+    display: inline-block;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 1px;
+    cursor: pointer;
+}
+.header ul li a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.header ul li a:hover{
+    color: orange;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+.header.sticky ul li a:hover{
+    color: #fff;
+}
+
+/* home section-------------------------------------------------------- */
+.banner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.banner img{
+    position: relative;
+    background-color: orange;
+    border-radius: 30px;
+    height: 70vh;
+    width: 33vw;
+    margin-top: 110px;
+    margin-left: 30px;
+    padding: 0px;
+}
+#wel{
+    color: rebeccapurple;
+    font-size: 50px;
+    /* position: relative; */
+}
+#name{
+    margin-top: -100px;
+    margin-left: 80px;
+    font-size: 120px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+#tag{
+    color: white;
+    /* background-color: white; */
+    display: block;
+    margin-left: 15px;
+    font-size: 40px;
+    font-weight: 700;
+    /* text-align: center; */
+}
+#change{
+    color: orange;
+}
+#hire{
+    background-color: orange;
+    height: 50px;
+    width: 110px;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: absolute;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 600;
+    border-color: black;
+    cursor: pointer;
+}
+#hire:hover{
+    background-color: black;
+    color: blue;
+    border-color: orange;
+}
+#cv{
+    background-color: orange;
+    height: 50px;
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 140px;
+    position: absolute;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 600;
+    border-color: black;
+    cursor: pointer;
+}
+#cv:hover{
+    background-color: black;
+    color: blue;
+    border-color: orange;
+}
+
+/* Container section -------------------------------------*/
+.container{
+    color: white;
+    scroll-behavior: smooth;
+}
+.hr{
+    margin-top: 100vh;
+}
+.box{
+    text-align: center;
+    margin: 10px;
+    padding: 90px;
+    font-size: 20px;
+}
+.box h1{
+    background-color: white;
+    color: black;
+    border-radius: 60px;
+    margin: 0px 350px;
+}
+#education{
+    height: 99vh;
+}
+.edu{
+    background-color:black;
+    border: 2px solid orange;
+    margin: 30px 29px;
+    height: 52vh;
+    border-radius: 25px;
+}
+.edu img{
+    height: 35vh;
+    width: 450px;
+    position: relative;
+    bottom: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.school{
+    background-color:black;
+    border: 2px solid orange;
+    margin: 30px 25px;
+    height: 52vh;
+    border-radius: 25px;
+}
+.school img{
+    height: 150px;
+    width: 220px;
+    margin: 30px;
+}
+#skills1{
+}
+#skills{
+    /* margin: 0;
+    padding: 0;
+    background-color: rgba(250, 164, 4, 0.644);
+    border-radius: 25px; */
+}
+.skcontainer{
+    padding-top: 2%;
+}
+.skills-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+}
+.skill-title {
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-bottom: 1%;
+}
+.skill-bar {
+    width: 100%;
+    background: rgba(247, 243, 243, 0.212);
+    height: 7px;
+    z-index: 0;
+    border-radius: 100px;
+    position: absolute;
+}
+.webdev {
+    animation: webdev 3s;
+    width: 60%;
+}
+.ad{
+    animation: webdev 3s;
+    width: 60%;
+}
+.java{
+    animation: webdev 3s;
+    width: 70%;
+}
+.dsa{
+    animation: webdev 3s;
+    width: 20%;
+}
+.photography{
+    animation: webdev 3s;
+    width: 50%;
+}
+.editing{
+    animation: webdev 3s;
+    width: 50%;
+}
+.skill-fill {
+    /* background-color: rgb(255, 255, 255); */
+    background-color: darkorange;
+    height: 7px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+}
+.skill{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+#experience{
+    height: 99vh;
+}
+#projects{
+    height: 99vh;
+}
+#contact-me{
+height: 99vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------- contact section----------------------------- */
+.phoneBox{
+    /* background-color: rgba(250, 164, 4, 0.644); */
+    padding: 50px;
+    margin: 17px 132px;
+    border-radius: 25px;
+    text-align: center;
+}
+#phone{
+    font-size: 20px;
+    display: inline;
+}
+#mailBtn{
+    background-color: rgba(0, 0, 0, 0);
+    width: 300px;
+    font-size: 18px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    height: 40px;
+}
+#mailBtn:hover{
+    opacity: 0.8;
+}
+.mail{
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* --------------------connect me------------------------- */
+/* Style all font awesome icons */
+#connect-me{
+    margin-top: -11vh;
+    text-align: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+ 
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    color: orange;
+  }
+  .fa-facebook:hover {
+    opacity: 1;
+    color: #4267B2;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    color: orange;
+  }
+  .fa-twitter:hover {
+    opacity: 1;
+    color: #1DA1F2;
+  }
+
+  .fa-instagram {
+    color: orange;
+  }
+  .fa-instagram:hover {
+    opacity: 1;
+    color: #833AB4;
+  }
+
+
+  .fa-youtube {
+    color: orange;
+  }
+  .fa-youtube:hover {
+    opacity: 1;
+    color: #FF0000;
+  }
+
+  .fa-linkedin {
+    color: orange;
+  }
+  .fa-linkedin:hover {
+    opacity: 1;
+    color: #2867B2;
+  }
+
+  .fa-whatsapp {
+    color: orange;
+  }
+  .fa-whatsapp:hover {
+    opacity: 1;
+    color: #4FCE5D;
+  }
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 10vh;
+    font-weight: 100;
+}
